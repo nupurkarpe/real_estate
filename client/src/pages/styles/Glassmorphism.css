@@ -1,0 +1,12 @@
+/* Glassmorphism.css */
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+  border-radius: 15px; /* Rounded corners */
+  backdrop-filter: blur(10px); /* Apply the blur effect */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  color: #080808; /* Ensure text color contrasts with the background */
+  padding: 20px; /* Ensure there is some padding */
+  max-width: 100%; /* Make sure it does not overflow */
+  width: 100%; /* Ensure full width */
+}

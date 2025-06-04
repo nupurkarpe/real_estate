@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent scrolling on the body */
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #333; /* Match your header styles */
+  color: white;
+  padding: 10px 20px;
+  z-index: 1000; /* Ensure header is above other elements */
+}
+
+.sidebar {
+  position: fixed;
+  top: 50px; /* Adjust according to header height */
+  bottom: 0;
+  width: 250px; /* Adjust the width of the sidebar */
+  background-color: #f4f4f4;
+  padding: 20px;
+  overflow-y: auto; /* Enable scrolling for sidebar if needed */
+}
+
+.main-content {
+  margin-top: 50px; /* Adjust according to header height */
+  margin-left: 250px; /* Match the sidebar width */
+  padding: 20px;
+  overflow-y: auto; /* Enable scrolling for content */
+  flex: 1;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.dashboard-title {
+  font-size: 24px;
+}
+
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+}
